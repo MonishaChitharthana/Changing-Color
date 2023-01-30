@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        table{
+            margin: 30vh 20px 0 50vh;
+        }
+        td,th,tr{
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #color{
+            margin: -35vh 0 0 100vh;
+            width: 50vh;
+            height: 70vh;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body >
+    
+    <table name="table">
+        <tr name="red">
+            <td onclick="redChan()" id="red" bgcolor="red">RED</td>
+            <td onclick="pinkChan()" id="pink" bgcolor="pink">PINK</td>
+        </tr>
+        <tr>
+            <td onclick="orangeChan()" id="orange" bgcolor="orange">ORANGE</td>
+            <td onclick="yellowChan()" id="yellow" bgcolor="yellow">YELLOW</td>
+        </tr>
+        <tr>
+            <td onclick="blackChan()" id="black" bgcolor="black">BLACK</td>
+            <td onclick="whiteChan()" id="white" bgcolor="white">WHITE</td>
+        </tr>
+        <tr>
+            <td onclick="greenChan()" id="green" bgcolor="green">GREEN</td>
+            <td onclick="violetChan()" id="violet" bgcolor="violet">VIOLET</td>
+        </tr>
+    </table>
+    <div id="color">
+        
+    </div>
+        <script >
+            function redChan(){
+                var a = document.getElementById("red").innerHTML;
+                document.getElementById("color").style.backgroundColor = a;
+            }
+            function pinkChan(){
+                var b = document.getElementById("pink").innerHTML;
+                document.getElementById("color").style.backgroundColor = b;
+            }
+            function orangeChan(){
+                var c = document.getElementById("orange").innerHTML;
+                document.getElementById("color").style.backgroundColor = c;
+            }
+            function yellowChan(){
+                var d = document.getElementById("yellow").innerHTML;
+                document.getElementById("color").style.backgroundColor = d;
+            }
+            function blackChan(){
+                var e = document.getElementById("black").innerHTML;
+                document.getElementById("color").style.backgroundColor = e;
+            }
+            function whiteChan(){
+                var f = document.getElementById("white").innerHTML;
+                document.getElementById("color").style.backgroundColor = f;
+            }
+            function greenChan(){
+                var g = document.getElementById("green").innerHTML;
+                document.getElementById("color").style.backgroundColor = g;
+            }
+            function violetChan(){
+                var h = document.getElementById("violet").innerHTML;
+                document.getElementById("color").style.backgroundColor = h;
+            }
+        </script>
+</body>
+</html>
